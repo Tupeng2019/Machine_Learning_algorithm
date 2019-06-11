@@ -162,7 +162,7 @@ def plotROC(predStrengths, classLabels):
             delX = 0; delY = yStep
         else:
             delX = xStep; delY = 0
-            # 高度的累加
+            # 高度的累加y
             ySum += cur[1]
         # 绘制ROC
         ax.plot([cur[0], cur[0] - delX], [cur[1], cur[1] - delY], c = 'b')
